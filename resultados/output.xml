@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.11 on win32)" generated="20230901 11:39:34.227" rpa="false" schemaversion="4">
+<suite id="s1" name="AliExpress Testes Gherki bdd" source="D:\cursoUdemy\RobotFrameworkTest\TestAliExpress\AliExpress_Testes_Gherki_bdd.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acasso ao menu &quot;Moda Masculina&quot;" line="8">
+<kw name="Abrir o navegador" library="AliExpress_Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230901 11:39:34.413" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<status status="PASS" starttime="20230901 11:39:34.413" endtime="20230901 11:39:39.948"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230901 11:39:39.948" endtime="20230901 11:39:40.210"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:34.412" endtime="20230901 11:39:40.210"/>
+</kw>
+<kw name="Dado que estou na home page do site AliExpress.com" library="AliExpress_Resources">
+<kw name="Acessar a home page do site AliExpress.com" library="AliExpress_Resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230901 11:39:40.211" level="INFO">Opening url 'https://pt.aliexpress.com'</msg>
+<status status="PASS" starttime="20230901 11:39:40.211" endtime="20230901 11:39:47.571"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Mercadinho}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230901 11:39:47.571" endtime="20230901 11:39:47.610"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:40.211" endtime="20230901 11:39:47.610"/>
+</kw>
+<kw name="Verificar se o titulo da pagina fica &quot;AliExpress - Comprar eletrônicos, produtos de moda, produtos para casa &amp; jardim e automotivos vindos diretamente da China - AliExpress.com&quot;" library="AliExpress_Resources" sourcename="Verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230901 11:39:47.612" level="INFO">Page title is 'AliExpress - Comprar eletrônicos, produtos de moda, produtos para casa &amp; jardim e automotivos vindos diretamente da China - AliExpress.com'.</msg>
+<status status="PASS" starttime="20230901 11:39:47.610" endtime="20230901 11:39:47.612"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:47.610" endtime="20230901 11:39:47.612"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:40.210" endtime="20230901 11:39:47.612"/>
+</kw>
+<kw name="Quando acessar a categoria &quot;Moda Masculina&quot;" library="AliExpress_Resources">
+<kw name="Entrar na categoria &quot;Moda Masculina&quot;" library="AliExpress_Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${CATEGORIA_MODA_MASCULINA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230901 11:39:47.613" level="INFO">Clicking element '//a[contains(.,'Moda Masculina')]'.</msg>
+<status status="PASS" starttime="20230901 11:39:47.613" endtime="20230901 11:39:53.132"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:47.612" endtime="20230901 11:39:53.132"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:47.612" endtime="20230901 11:39:53.132"/>
+</kw>
+<kw name="Então o titulo da página deve fica &quot;Moda Masculina - Compre Moda Masculina com envio grátis no aliexpress&quot;" library="AliExpress_Resources">
+<kw name="Verificar se o titulo da página fica &quot;Moda Masculina - Compre Moda Masculina com envio grátis no aliexpress&quot;" library="AliExpress_Resources" sourcename="Verificar se o titulo da página fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230901 11:39:53.140" level="INFO">Page title is 'Moda Masculina - Compre Moda Masculina com envio grátis no aliexpress'.</msg>
+<status status="PASS" starttime="20230901 11:39:53.133" endtime="20230901 11:39:53.140"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:53.132" endtime="20230901 11:39:53.140"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:53.132" endtime="20230901 11:39:53.141"/>
+</kw>
+<kw name="E a categoria &quot;Moda Masculina&quot; deve ser exibida na pagina" library="AliExpress_Resources">
+<kw name="Verificar se esta na categoria &quot;Moda Masculina&quot;" library="AliExpress_Resources">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'Colete masculino sem mangas de singlets fitness, roupas casuais para musculação, regatas tamanho grande, preto, branco, cinza, novo, verão 2020')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230901 11:39:53.157" level="INFO">Element '//img[contains(@alt,'Colete masculino sem mangas de singlets fitness, roupas casuais para musculação, regatas tamanho grande, preto, branco, cinza, novo, verão 2020')]' is displayed.</msg>
+<status status="PASS" starttime="20230901 11:39:53.141" endtime="20230901 11:39:53.157"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:53.141" endtime="20230901 11:39:53.157"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:53.141" endtime="20230901 11:39:53.157"/>
+</kw>
+<kw name="Fechar o navegador" library="AliExpress_Resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230901 11:39:53.254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230901 11:39:53.158" endtime="20230901 11:39:53.254"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230901 11:39:53.254" endtime="20230901 11:39:57.040"/>
+</kw>
+<status status="PASS" starttime="20230901 11:39:53.157" endtime="20230901 11:39:57.040"/>
+</kw>
+<doc>Esse teste verifica o menu Moda Masculina do site da AliExpress.com</doc>
+<tag>menu categoria</tag>
+<status status="PASS" starttime="20230901 11:39:34.412" endtime="20230901 11:39:57.040"/>
+</test>
+<doc>Essa suite testas o site da AliExpress.com</doc>
+<status status="PASS" starttime="20230901 11:39:34.228" endtime="20230901 11:39:57.041"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">menu categoria</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AliExpress Testes Gherki bdd">AliExpress Testes Gherki bdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

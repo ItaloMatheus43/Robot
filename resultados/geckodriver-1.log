@@ -1,0 +1,28 @@
+1693577895119	geckodriver	INFO	Listening on 127.0.0.1:63058
+1693577898169	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63059" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofileyl3a6I"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693577898410	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693577898529	Marionette	INFO	Listening on port 63068
+WebDriver BiDi listening on ws://127.0.0.1:63059
+Read port: 63068
+1693577898930	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63059/devtools/browser/26dc75bc-0428-41dc-9bd3-0a2aefaf4266
+JavaScript warning: https://assets.alicdn.com/g/secdev/sufei_data/3.9.11/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://assets.alicdn.com/g/secdev/nsv/1.0.87/ns_f_95_3_n.js?v=1, line 5: WebGL context was lost.
+JavaScript warning: https://assets.alicdn.com/g/AWSC/et/1.66.5/et_n.js, line 7: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://assets.alicdn.com/g/AWSC/et/1.66.5/et_n.js, line 7: WebGL context was lost.
+JavaScript warning: https://assets.alicdn.com/g/AWSC/et/1.66.5/et_n.js, line 6: WebGL context was lost.
+JavaScript warning: https://aeis.alicdn.com/AWSC/uab/1.140.0/collina.js, line 4: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.10/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.87/ns_f_95_3_n.js?v=1, line 5: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.66.7/et_n.js, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.66.7/et_n.js, line 6: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.66.7/et_n.js, line 4: WebGL context was lost.
+1693577914295	Marionette	INFO	Stopped listening on port 63068
+JavaScript warning: https://assets.alicdn.com/g/ae-fe/cosmos/0.0.186/pc/gep-sdk.js, line 6: Script terminated by timeout at:
+oe@https://assets.alicdn.com/g/ae-fe/cosmos/0.0.186/pc/gep-sdk.js:6:80472
+te@https://assets.alicdn.com/g/ae-fe/cosmos/0.0.186/pc/gep-sdk.js:6:80252
+
+Dynamically enable window occlusion 1
